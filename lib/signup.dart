@@ -8,7 +8,7 @@ class sign_up extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Center(child: Text("EXD")),
+        title: const Center(child: Text("EXD")),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -22,7 +22,7 @@ class sign_up extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Sign Up", style: TextStyle(fontSize: 28)),
+                const Text("Sign Up", style: TextStyle(fontSize: 28)),
               ],
             ),
           ),
@@ -48,7 +48,7 @@ class sign_up extends StatelessWidget {
                   labelText: ("Password"),
                   hintText: ("......"),
                   suffixIcon: IconButton(
-                      onPressed: () {}, icon: Icon(Icons.remove_red_eye))),
+                      onPressed: () {}, icon: const Icon(Icons.remove_red_eye))),
             ),
           ),
           Container(
@@ -67,7 +67,7 @@ class sign_up extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
-                child: CircleAvatar(
+                child: const CircleAvatar(
                   backgroundColor: Colors.red,
                   child: ClipOval(
                     child: Icon(Icons.forward),
@@ -83,11 +83,27 @@ class sign_up extends StatelessWidget {
                 Container(
                   height: 22,
                   width: 326,
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Already have aan account? Sign In",
                       style: TextStyle(fontSize: 17),
                     ),
+
+
+
+                  ),
+                ),
+                Container(
+                  height: 22,
+                  width: 326,
+                  child: const Center(
+                    child: Text(
+                      "Already have aan account? Sign In",
+                      style: TextStyle(fontSize: 17),
+                    ),
+
+
+
                   ),
                 ),
               ],
