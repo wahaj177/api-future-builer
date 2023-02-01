@@ -106,6 +106,20 @@ class sign_up extends StatelessWidget {
 
                   ),
                 ),
+                Container(
+                  height: 22,
+                  width: 326,
+                  child: const Center(
+                    child: Text(
+                      "Already have aan account? Sign In",
+                      style: TextStyle(fontSize: 17),
+                    ),
+
+
+
+                  ),
+                ),
+
               ],
             ),
           )
