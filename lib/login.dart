@@ -9,7 +9,7 @@ class login extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Center(child: Text("EXD")),
+        title: const Center(child: Text("EXD")),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -23,7 +23,7 @@ class login extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Login", style: TextStyle(fontSize: 28)),
+                const Text("Login", style: TextStyle(fontSize: 28)),
               ],
             ),
           ),
@@ -49,7 +49,7 @@ class login extends StatelessWidget {
                   labelText: ("Password"),
                   hintText: ("......"),
                   suffixIcon: IconButton(
-                      onPressed: () {}, icon: Icon(Icons.remove_red_eye))),
+                      onPressed: () {}, icon: const Icon(Icons.remove_red_eye))),
             ),
           ),
           InkWell(
@@ -59,7 +59,7 @@ class login extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Text(
+                  const Text(
                     "Forget Password?",
                     style: TextStyle(fontSize: 17),
                   ),
@@ -76,7 +76,7 @@ class login extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
-                child: CircleAvatar(
+                child: const CircleAvatar(
                   backgroundColor: Colors.red,
                   child: ClipOval(
                     child: Icon(Icons.forward),
@@ -92,7 +92,17 @@ class login extends StatelessWidget {
                 Container(
                   height: 22,
                   width: 326,
-                  child: Center(
+                  child: const Center(
+                    child: Text(
+                      "Login with social",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 22,
+                  width: 326,
+                  child: const Center(
                     child: Text(
                       "Login with social",
                       style: TextStyle(fontSize: 20),
